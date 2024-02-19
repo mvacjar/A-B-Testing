@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #507851;
+  font-weight: 600;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  color: #f8a41e;
+  padding: 15px 30px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px #17301d;
+  font-weight: 600;
+}
+
+.navbar li:hover {
+  color: #283e2d;
+  text-shadow: 2px 2px 10px #ffe796;
+}
