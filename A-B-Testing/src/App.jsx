@@ -5,8 +5,18 @@ import "./App.css";
 import { useState, useEffect } from "react";
 
 function App() {
- return (
-  <><Header ></Header></>
- )
+  const [visible, setVisible] = useState(Math.random() < 0.5);
+
+  useEffect(() => {
+    setVisible(Math.random() < 0.5);
+  }, []);
+
+  return (
+    <>
+      <Header />
+      {visible ? <BodyA /> : <BodyB />}
+    </>
+  );
+}
 
 export default App;
