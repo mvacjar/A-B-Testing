@@ -1,29 +1,29 @@
 import "./Body.css";
-import postal from "../../asets/faceB.png";
+import potion from "../../asets/faceA.png";
 
-function Body() {
+function BodyB({ handleClick }) {
   return (
     <>
       <div>
-        <img src={postal} alt="potion" />
         <section>
-          <p>
-            Greetings, traveler. It seems you have stumbled upon our mystical
-            corner of the web. While we would love to share our treasures with
-            you, access to our exclusive collection of potions requires a
-            special invitation. Fear not, for if you yearn to partake in the
-            mysteries held within these digital walls, simply send us a postcard
-            with your request, and perhaps the winds of fate will carry an
-            invitation to your doorstep. Until then, may your travels be filled
-            with wonder and adventure.
+          <p className="text-B">
+            Welcome to our mystical online emporium, where magic awaits at every
+            click. Step into a realm of enchantment and explore our collection
+            of potent potions crafted by the most skilled alchemists. Whether
+            you seek to unlock hidden powers, heal ailments, or simply indulge
+            in the wonders of the arcane, you have come to the right place. Join
+            us on this extraordinary journey and let the magic unfold!
           </p>
+          <img src={potion} alt="potion" />
+
           <div className="button-content-B">
-            <button className="button-B">Make an Order</button>
+            <button className="button-B" onClick={handleClick}>
+              Make an Order
+            </button>
           </div>
         </section>
       </div>
     </>
   );
 }
-
-export default Body;
+export default BodyB;

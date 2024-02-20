@@ -1,13 +1,13 @@
 import "./Body.css";
 import potion from "../../asets/faceA.png";
 
-function Body() {
+function BodyA({ handleClick }) {
   return (
     <>
       <div>
         <img src={potion} alt="potion" />
         <section>
-          <p>
+          <p className="text-A">
             Welcome to our mystical online emporium, where magic awaits at every
             click. Step into a realm of enchantment and explore our collection
             of potent potions crafted by the most skilled alchemists. Whether
@@ -16,7 +16,9 @@ function Body() {
             us on this extraordinary journey and let the magic unfold!
           </p>
           <div className="button-content-A">
-            <button className="button-A">Make an Order</button>
+            <button className="button-A" onClick={handleClick}>
+              Make an Order
+            </button>
           </div>
         </section>
       </div>
@@ -24,4 +26,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default BodyA;

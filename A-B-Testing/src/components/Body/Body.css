@@ -17,6 +17,10 @@ p {
   font-size: 1.2rem;
 }
 
+.text-B {
+  margin-bottom: 0rem;
+}
+
 .button-content-A,
 .button-content-B {
   display: flex;

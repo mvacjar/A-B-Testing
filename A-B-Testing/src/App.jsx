@@ -11,10 +11,22 @@ function App() {
     setVisible(Math.random() < 0.5);
   }, []);
 
+  const handleClick = () => {
+    console.log({
+      event: "ctaClick",
+      cta: "button",
+      variant: visible === 0 ? "versionA" : "versionB",
+    });
+  };
+
   return (
     <>
       <Header />
-      {visible ? <BodyA /> : <BodyB />}
+      {visible ? (
+        <BodyA handleClick={handleClick} />
+      ) : (
+        <BodyB handleClick={handleClick} />
+      )}
     </>
   );
 }
