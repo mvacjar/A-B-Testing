@@ -1,5 +1,5 @@
 import "./Body.css";
-import potion from "../../asets/faceA.png";
+import potion from "../../assets/faceA.png";
 
 function BodyB({ handleClick }) {
   return (
@@ -14,8 +14,9 @@ function BodyB({ handleClick }) {
             in the wonders of the arcane, you have come to the right place. Join
             us on this extraordinary journey and let the magic unfold!
           </p>
-          <img src={potion} alt="potion" />
-
+          <div className="img-content">
+            <img src={potion} alt="potion" />
+          </div>
           <div className="button-content-B">
             <button className="button-B" onClick={handleClick}>
               Make an Order

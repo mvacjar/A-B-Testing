@@ -1,11 +1,13 @@
 import "./Body.css";
-import potion from "../../asets/faceA.png";
+import potion from "../../assets/faceA.png";
 
 function BodyA({ handleClick }) {
   return (
     <>
       <div>
-        <img src={potion} alt="potion" />
+        <div className="img-content">
+          <img src={potion} alt="potion" />
+        </div>
         <section>
           <p className="text-A">
             Welcome to our mystical online emporium, where magic awaits at every

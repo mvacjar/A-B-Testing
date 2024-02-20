@@ -15,7 +15,7 @@ function App() {
     console.log({
       event: "ctaClick",
       cta: "button",
-      variant: visible === 0 ? "versionA" : "versionB",
+      variant: visible > 0.5 ? "versionA" : "versionB",
     });
   };
 
